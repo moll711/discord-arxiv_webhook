@@ -4,6 +4,10 @@ import requests
 import feedparser
 from dotenv import load_dotenv
 
+#github actionsでのデバッグ用
+print("DEEPL:", os.getenv("DEEPL_API_KEY"))
+print("WEBHOOK:", os.getenv("DISCORD_WEBHOOK_URL"))
+
 # 初期化
 load_dotenv()
 
