@@ -12,7 +12,7 @@ with open("config.yaml", "r", encoding="utf-8") as f:
 
 # arXiv取得
 def fetch_arxiv():
-    query = " OR ".join([f"cat:{c}" for c in config["arxiv"]["categories"]])
+    query = "+OR+".join([f"cat:{c}" for c in config["arxiv"]["categories"]])
     url = f"http://export.arxiv.org/api/query?search_query={query}&start=0&max_results={config['arxiv']['max_results']}"
 
     feed = feedparser.parse(url)
