@@ -3,10 +3,10 @@ arxiv:
     - cs.AI
     - cs.CL
     - cs.LG
-  max_results: 50
+  max_results: 100
 
 post:
-  max_per_run: 3
+  max_per_run: 5
 
 summary:
   enabled: true
